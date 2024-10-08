@@ -7,12 +7,11 @@ import com.users.domain.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
 import org.springframework.stereotype.Service;
 
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@Service()
+@Service
 @ConditionalOnProperty(name = "service.users", havingValue = "json")
 public class UsersServiceJsonImpl implements UsersService{
 

@@ -5,7 +5,7 @@ public class User {
     private String name;
     private String username;
     private String password;
-    private boolean enabled;
+    private Boolean enabled;
 
     public User(int id, String name, String username, String password, boolean enabled) {
         this.id = id;
@@ -13,6 +13,10 @@ public class User {
         this.username = username;
         this.password = password;
         this.enabled = enabled;
+    }
+
+    public User() {
+
     }
 
     public int getId() {
