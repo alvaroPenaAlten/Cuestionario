@@ -1,0 +1,37 @@
+[
+  {
+    "id": 1,
+    "name": "Alvaro Peña",
+    "username": "alvaroPena",
+    "password": "alvapena123",
+    "enabled": true
+  },
+  {
+    "id": 2,
+    "name": "Adrian Peña",
+    "username": "adrianPena",
+    "password": "adripena542",
+    "enabled": false
+  },
+  {
+    "id": 3,
+    "name": "María José",
+    "username": "mariajo",
+    "password": "mariajo153",
+    "enabled": true
+  },
+  {
+    "id": 4,
+    "name": "Carmen Pérez",
+    "username": "carmenPe",
+    "password": "carmen568",
+    "enabled": false
+  },
+  {
+    "id": 5,
+    "name": "Mario Gómez",
+    "username": "marioGomez",
+    "password": "mario854",
+    "enabled": true
+  }
+]
