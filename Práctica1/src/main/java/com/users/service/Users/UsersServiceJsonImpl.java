@@ -5,12 +5,13 @@ import com.fasterxml.jackson.core.type.TypeReference;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import com.users.domain.User;
 import org.springframework.boot.autoconfigure.condition.ConditionalOnProperty;
-import org.springframework.context.annotation.Primary;
 import org.springframework.stereotype.Service;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
-@Primary
 @Service()
 @ConditionalOnProperty(name = "service.users", havingValue = "json")
 public class UsersServiceJsonImpl implements UsersService{
@@ -22,9 +23,16 @@ public class UsersServiceJsonImpl implements UsersService{
         try{
             users = new ObjectMapper()
                     .readValue(this.getClass().getResourceAsStream("/users.json"),
-                            new TypeReference<List<User>>() {});
+                            new TypeReference<List<User>>(){});
 
-            return users;
+            List<User> usersEnabled = new ArrayList<>(Arrays.asList());
+
+            for (User c : users)
+                if(c.isEnabled()){
+                    usersEnabled.add(c);
+                }
+            return usersEnabled;
+
         }catch (Exception e){
             throw new RuntimeException(e);
         }
