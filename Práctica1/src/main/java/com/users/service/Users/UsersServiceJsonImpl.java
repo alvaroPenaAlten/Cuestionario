@@ -24,13 +24,14 @@ public class UsersServiceJsonImpl implements UsersService{
                     .readValue(this.getClass().getResourceAsStream("/users.json"),
                             new TypeReference<List<User>>(){});
 
-            List<User> usersEnabled = new ArrayList<>(Arrays.asList());
+            //List<User> usersEnabled = new ArrayList<>(Arrays.asList());
 
-            for (User c : users)
-                if(c.isEnabled()){
-                    usersEnabled.add(c);
-                }
-            return usersEnabled;
+            //for (User c : users)
+              //  if(c.isEnabled()){
+                //    usersEnabled.add(c);
+                //}
+            //return usersEnabled;
+            return users;
 
         }catch (Exception e){
             throw new RuntimeException(e);

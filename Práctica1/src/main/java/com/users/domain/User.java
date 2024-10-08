@@ -3,13 +3,15 @@ package com.users.domain;
 public class User {
     private Integer id;
     private String name;
+    private String surname;
     private String username;
     private String password;
     private Boolean enabled;
 
-    public User(int id, String name, String username, String password, boolean enabled) {
+    public User(Integer id, String name, String surname, String username, String password, Boolean enabled) {
         this.id = id;
         this.name = name;
+        this.surname = surname;
         this.username = username;
         this.password = password;
         this.enabled = enabled;
@@ -57,5 +59,13 @@ public class User {
 
     public void setEnabled(boolean enabled) {
         this.enabled = enabled;
+    }
+
+    public String getSurname() {
+        return surname;
+    }
+
+    public void setSurname(String surname) {
+        this.surname = surname;
     }
 }
