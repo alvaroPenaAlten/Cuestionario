@@ -1,0 +1,21 @@
+
+INSERT INTO USERS (name, apellido, username) VALUES ('Carlos', 'Gómez', 'cgomez');
+INSERT INTO USERS (name, apellido, username) VALUES ('María', 'López', 'mlopez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Pedro', 'Martínez', 'pmartinez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Ana', 'Hernández', 'ahernandez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Luis', 'Sánchez', 'lsanchez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Laura', 'Ramírez', 'lramirez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Jorge', 'Vargas', 'jvargas');
+INSERT INTO USERS (name, apellido, username) VALUES ('Claudia', 'Mendoza', 'cmendoza');
+INSERT INTO USERS (name, apellido, username) VALUES ('Sofía', 'Pérez', 'sperez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Andrés', 'García', 'agarcia');
+INSERT INTO USERS (name, apellido, username) VALUES ('Daniela', 'Torres', 'dtorres');
+INSERT INTO USERS (name, apellido, username) VALUES ('Roberto', 'Silva', 'rsilva');
+INSERT INTO USERS (name, apellido, username) VALUES ('Patricia', 'Ortiz', 'portiz');
+INSERT INTO USERS (name, apellido, username) VALUES ('Miguel', 'Núñez', 'mnunez');
+INSERT INTO USERS (name, apellido, username) VALUES ('Elena', 'Reyes', 'ereyes');
+INSERT INTO USERS (name, apellido, username) VALUES ('Raúl', 'Cruz', 'rcruz');
+INSERT INTO USERS (name, apellido, username) VALUES ('Gabriela', 'Flores', 'gflores');
+INSERT INTO USERS (name, apellido, username) VALUES ('Fernando', 'Morales', 'fmorales');
+INSERT INTO USERS (name, apellido, username) VALUES ('Lucía', 'Castro', 'lcastro');
+INSERT INTO USERS (name, apellido, username) VALUES ('Diego', 'Rojas', 'drojas');
