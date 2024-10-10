@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "name": "Laptop(Json)",
+    "price": 856.98,
+    "stock": 20
+  },
+  {
+    "id": 2,
+    "name": "Smartphone(Json)",
+    "price": 650.2,
+    "stock": 50
+  },
+  {
+    "id": 3,
+    "name": "Tablet(Json)",
+    "price": 360.99,
+    "stock": 76
+  },
+  {
+    "id": 4,
+    "name": "Smartwatch(Json)",
+    "price": 99.99,
+    "stock": 86
+  }
+]
