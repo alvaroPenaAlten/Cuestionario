@@ -20,13 +20,6 @@ public class Rol  implements Serializable {
     @OneToMany(mappedBy = "rol", fetch = FetchType.LAZY)
     private Set<User> users;
 
-    public Rol(Long id,String name) {
-        this.id = id;
-        this.name = name;
-    }
-
-    public Rol() {}
-
     public Long getId() {
         return id;
     }
