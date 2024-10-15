@@ -1,7 +1,6 @@
 package com.userDto.domain;
 
-import com.fasterxml.jackson.annotation.JsonBackReference;
-import com.fasterxml.jackson.annotation.JsonManagedReference;
+
 import jakarta.persistence.*;
 
 import java.util.Set;
@@ -17,9 +16,16 @@ public class Rol {
     @Column(name = "rol_Name")
     private String name;
 
-
     @OneToMany(mappedBy = "rol", fetch = FetchType.LAZY)
     private Set<User> users;
+
+    @ManyToMany
+    @JoinTable(
+            name = "ROL_PERMISOS",
+            joinColumns = @JoinColumn(name = "rol_id"),
+            inverseJoinColumns = @JoinColumn(name = "permiso_id")
+    )
+    private Set<Permisos> permisos;
 
     public Long getId() {
         return id;
