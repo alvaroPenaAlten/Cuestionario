@@ -1,11 +1,14 @@
 package com.userDto.controller;
 
+import com.userDto.domain.Rol;
+import com.userDto.domain.User;
 import com.userDto.dto.RolDto;
 import com.userDto.service.RolServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Repository;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -24,6 +27,25 @@ public class RolDtoControllerImp implements RolDtoController{
     @GetMapping
     public List<RolDto> getAllRols() {
         return rolServiceImp.getAllRols();
+    }
+
+    @Override
+    @GetMapping("/{id}")
+    public ResponseEntity<Rol> getRolById(@PathVariable Long id){
+        return ResponseEntity.ok(rolServiceImp.getRolById(id).get());
+    }
+
+    @Override
+    @PutMapping
+    public ResponseEntity<Rol> updateUser(@RequestBody Rol rol){
+        return ResponseEntity.ok(rolServiceImp.updateRol(rol));
+    }
+
+    @Override
+    @DeleteMapping("/{id}")
+    public ResponseEntity<Rol> deleteRol(@PathVariable Long id) {
+        rolServiceImp.deleteRol(id);
+        return ResponseEntity.noContent().build();
     }
 
 

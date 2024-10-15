@@ -1,6 +1,7 @@
 INSERT INTO ROLES(rol_Name) VALUES ('admin');
 INSERT INTO ROLES(rol_Name) VALUES ('usuario');
 INSERT INTO ROlES(rol_Name) VALUES('Manage');
+INSERT INTO ROLES(rol_Name) VALUES('Default');
 
 INSERT INTO PERMISOS (title) VALUES ('Crear Usuario');
 INSERT INTO PERMISOS (title) VALUES ('Leer Usuario');

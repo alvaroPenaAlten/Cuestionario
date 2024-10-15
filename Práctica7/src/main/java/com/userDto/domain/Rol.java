@@ -1,6 +1,7 @@
 package com.userDto.domain;
 
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.Set;
@@ -16,7 +17,8 @@ public class Rol {
     @Column(name = "rol_Name")
     private String name;
 
-    @OneToMany(mappedBy = "rol", fetch = FetchType.LAZY)
+    @OneToMany(mappedBy = "rol")
+    @JsonIgnore
     private Set<User> users;
 
     @ManyToMany

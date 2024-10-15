@@ -17,8 +17,8 @@ public class User {
     private String password;
     private Boolean enabled;
 
-    @ManyToOne(fetch = FetchType.LAZY)
-    @JoinColumn(name = "rol_id", nullable = false)
+    @ManyToOne
+    @JoinColumn(name = "rol_id", nullable = true)
     private Rol rol;
 
     public Long getId() {
@@ -76,4 +76,5 @@ public class User {
     public void setRol(Rol rol) {
         this.rol = rol;
     }
+
 }
