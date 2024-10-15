@@ -1,6 +1,7 @@
 package com.userDto.controller;
 
 
+import com.userDto.domain.User;
 import com.userDto.dto.UserDtoName;
 import com.userDto.service.UserServiceImp;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -13,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 import java.util.List;
 
 @RestController
-@RequestMapping("completeName")
+@RequestMapping("/completeName")
 public class UserDtoNameControllerImp implements UserDtoNameController{
 
     @Autowired
@@ -27,7 +28,7 @@ public class UserDtoNameControllerImp implements UserDtoNameController{
 
     @Override
     @GetMapping("/{id}")
-    public ResponseEntity<UserDtoName> getUserDtoByID(@PathVariable Long id) {
-        return ResponseEntity.ok(userService.getUserById(id));
+    public ResponseEntity<User> getUserDtoByID(@PathVariable Long id) {
+        return ResponseEntity.ok(userService.getUserById(id).get());
     }
 }

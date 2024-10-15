@@ -1,5 +1,6 @@
 package com.userDto.controller;
 
+import com.userDto.domain.User;
 import com.userDto.dto.UserDtoName;
 import org.springframework.http.ResponseEntity;
 
@@ -9,6 +10,6 @@ public interface UserDtoNameController {
 
     public List<UserDtoName> getAllUser();
 
-    public ResponseEntity<UserDtoName> getUserDtoByID(Long id);
+    public ResponseEntity<User> getUserDtoByID(Long id);
 
 }

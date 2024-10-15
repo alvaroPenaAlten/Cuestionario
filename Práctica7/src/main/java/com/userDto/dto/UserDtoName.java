@@ -1,10 +1,15 @@
 package com.userDto.dto;
 
-public class UserDtoName {
+import com.userDto.domain.Rol;
+
+import java.io.Serializable;
+
+public class UserDtoName implements Serializable {
 
     private Long id;
     private String completeName;
     private String username;
+    private RolDto rol;
 
     public UserDtoName(Long id, String completeName, String username) {
         this.id = id;
@@ -13,6 +18,9 @@ public class UserDtoName {
     }
 
     public UserDtoName(){}
+
+    public UserDtoName(Long id, String completeName, String username, Rol rol) {
+    }
 
     public Long getId() {
         return id;
@@ -38,4 +46,11 @@ public class UserDtoName {
         this.username = username;
     }
 
+    public RolDto getRol() {
+        return rol;
+    }
+
+    public void setRol(RolDto rol) {
+        this.rol = rol;
+    }
 }

@@ -1,6 +1,8 @@
 package com.userDto.dto;
 
-public class RolDto {
+import java.io.Serializable;
+
+public class RolDto implements Serializable {
 
     private Long id;
     private String name;
@@ -9,6 +11,7 @@ public class RolDto {
         this.id = id;
         this.name = name;
     }
+
 
     public RolDto() {
     }

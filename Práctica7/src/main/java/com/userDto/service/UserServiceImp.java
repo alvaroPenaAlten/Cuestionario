@@ -8,6 +8,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 @Service
@@ -25,15 +26,14 @@ public class UserServiceImp implements UserService{
     @Override
     public List<UserDtoName> getAllUsers() {
         List<User> users = userRepository.findAll();
+        System.out.println("Users found: " + users);
         return users.stream()
                 .map(userMapper::toUserDtoName)
                 .collect(Collectors.toList());
     }
 
     @Override
-    public UserDtoName getUserById(Long id) {
-        return userRepository.findById(id)
-                .map(userMapper::toUserDtoName)
-                .orElse(null);
+    public Optional<User> getUserById(Long id) {
+        return userRepository.findById(id);
     }
 }

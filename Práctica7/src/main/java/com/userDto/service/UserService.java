@@ -1,13 +1,15 @@
 package com.userDto.service;
 
+import com.userDto.domain.User;
 import com.userDto.dto.UserDtoName;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
 
     public List<UserDtoName> getAllUsers();
 
-    public UserDtoName getUserById(Long id);
+    public Optional<User> getUserById(Long id);
 
 }
