@@ -1,5 +1,15 @@
 INSERT INTO ROLES(rol_Name) VALUES ('admin');
 INSERT INTO ROLES(rol_Name) VALUES ('usuario');
+INSERT INTO ROlES(rol_Name) VALUES('Manage');
+
+INSERT INTO PERMISOS (title) VALUES ('Crear Usuario');
+INSERT INTO PERMISOS (title) VALUES ('Leer Usuario');
+INSERT INTO PERMISOS (title) VALUES ('Actualizar Usuario');
+INSERT INTO PERMISOS (title) VALUES ('Eliminar Usuario');
+INSERT INTO PERMISOS (title) VALUES ('Crear Rol');
+INSERT INTO PERMISOS (title) VALUES ('Leer Rol');
+INSERT INTO PERMISOS (title) VALUES ('Actualizar Rol');
+
 
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Carlos', 'Gómez', 'cgomez', 'password1', true, 1);
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Pedro', 'Hernández', 'phernandez', 'password3', true, 1);

@@ -1,5 +1,7 @@
 package com.userDto.service;
 
+import com.userDto.domain.Permisos;
+import com.userDto.domain.Rol;
 import com.userDto.dto.RolDto;
 
 import java.util.List;

@@ -12,7 +12,6 @@ public class RolDto implements Serializable {
         this.name = name;
     }
 
-
     public RolDto() {
     }
 

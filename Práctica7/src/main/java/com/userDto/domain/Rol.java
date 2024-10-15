@@ -50,4 +50,12 @@ public class Rol {
     public void setUsers(Set<User> users) {
         this.users = users;
     }
+
+    public Set<Permisos> getPermisos() {
+        return permisos;
+    }
+
+    public void setPermisos(Set<Permisos> permisos) {
+        this.permisos = permisos;
+    }
 }

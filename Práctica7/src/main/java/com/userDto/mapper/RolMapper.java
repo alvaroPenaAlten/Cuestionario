@@ -9,7 +9,17 @@ import org.springframework.stereotype.Component;
 public class RolMapper {
 
     public RolDto toRolDto(Rol rol){
-        return new RolDto(rol.getId(),rol.getName());
+        RolDto rolDto = new RolDto();
+        rolDto.setId(rol.getId());
+        rolDto.setName(rol.getName());
+        return rolDto;
+    }
+
+    public Rol toEntity(RolDto rolDto){
+        Rol rol = new Rol();
+        rol.setId(rolDto.getId());
+        rol.setName(rolDto.getName());
+        return rol;
     }
 
 }

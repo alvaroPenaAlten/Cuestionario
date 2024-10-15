@@ -14,7 +14,7 @@ public class UserMapper {
 
         UserDtoName userDtoName = new UserDtoName();
         userDtoName.setId(user.getId());
-        userDtoName.setCompleteName(user.getName());
+        userDtoName.setCompleteName(user.getName().concat(user.getSubname()));
         userDtoName.setUsername(user.getUsername());
 
         RolDto rolDto = toRolDto(user.getRol());

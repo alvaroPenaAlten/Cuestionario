@@ -1,5 +1,6 @@
 package com.userDto.service;
 
+import com.userDto.domain.Permisos;
 import com.userDto.domain.Rol;
 import com.userDto.dto.RolDto;
 import com.userDto.mapper.RolMapper;
@@ -8,6 +9,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.Optional;
 import java.util.stream.Collectors;
 
 
@@ -26,9 +28,14 @@ public class RolServiceImp implements RolService{
     @Override
     public List<RolDto> getAllRols() {
         List<Rol> rols = rolRepository.findAll();
-        System.out.println("Rols found: " + rols);
         return rols.stream()
                 .map(rolMapper::toRolDto)
                 .collect(Collectors.toList());
     }
+
+
+
+
+
+
 }

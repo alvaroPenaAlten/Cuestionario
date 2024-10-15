@@ -26,7 +26,6 @@ public class UserServiceImp implements UserService{
     @Override
     public List<UserDtoName> getAllUsers() {
         List<User> users = userRepository.findAll();
-        System.out.println("Users found: " + users);
         return users.stream()
                 .map(userMapper::toUserDtoName)
                 .collect(Collectors.toList());
