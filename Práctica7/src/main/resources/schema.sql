@@ -41,3 +41,14 @@ INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Verónica', 'Navarro', 'vnavarro', 'password16', false, 2);
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Natalia', 'Castro', 'ncastro', 'password18', false, 2);
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Silvia', 'Vargas', 'svargas', 'password20', false, 2);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Ana', 'Martínez', 'amartinez', 'password1', true, 3);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Luis', 'González', 'lgonzalez', 'password2', true, 3);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Carlos', 'Pérez', 'cperez', 'password3', true, 3);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('María', 'Lopez', 'mlopez', 'password4', true, 3);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Sofía', 'Hernández', 'shernandez', 'password5', true, 3);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Javier', 'Castillo', 'jcastillo', 'password6', true, 4);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Valentina', 'Ramírez', 'vramirez', 'password7', true, 4);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Diego', 'Gutiérrez', 'dgutierrez', 'password8', true, 4);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Lucía', 'Mendoza', 'lmendoza', 'password9', true, 4);
+INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Ricardo', 'Moreno', 'rmoreno', 'password10', true, 4);
+
