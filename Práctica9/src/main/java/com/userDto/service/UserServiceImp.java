@@ -2,6 +2,7 @@ package com.userDto.service;
 
 import com.userDto.domain.User;
 import com.userDto.dto.UserDtoName;
+import com.userDto.exceptions.UserNotFoundException;
 import com.userDto.mapper.UserMapper;
 import com.userDto.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -36,29 +37,26 @@ public class UserServiceImp implements UserService{
     @Override
     @Transactional(readOnly = true)
     public Optional<User> getUserById(Long id) {
-        return userRepository.findById(id);
+    return userRepository.findById(id);
     }
 
     @Override
     @Transactional
     public User updateUser(User user){
 
-        User userDb = userRepository.findById(user.getId()).orElse(null);
-        if(userDb != null){
+        User userDb = userRepository.findById(user.getId()).orElseThrow(() -> new UserNotFoundException("Usuario con ID " + user.getId() + " no encontrado"));
             userDb.setName(user.getName());
             userDb.setSubname(user.getSubname());
             userDb.setUsername(user.getUsername());
             userDb.setPassword(user.getPassword());
 
             return userRepository.save(userDb);
-        }
-        return null;
     }
 
     @Override
     @Transactional
     public void deleteUser(Long id){
-        User user = userRepository.findById(id).orElse(null);
+        User user = userRepository.findById(id).orElseThrow(() -> new UserNotFoundException("Usuario con ID " + id + " no encontrado"));
         userRepository.deleteById(id);
     }
 

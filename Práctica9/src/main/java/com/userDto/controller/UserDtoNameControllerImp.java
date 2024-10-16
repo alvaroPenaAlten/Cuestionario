@@ -1,15 +1,14 @@
 package com.userDto.controller;
 
 
-import com.userDto.domain.Rol;
 import com.userDto.domain.User;
 import com.userDto.dto.UserDtoName;
+import com.userDto.exceptions.UserNotFoundException;
 import com.userDto.service.UserServiceImp;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
-import org.springframework.stereotype.Repository;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -39,9 +38,8 @@ public class UserDtoNameControllerImp implements UserDtoNameController{
     @Override
     @GetMapping("/{id}")
     public ResponseEntity<User> getUserDtoByID(@PathVariable Long id) {
-        logger.info("Solicitud entrante para obtener usuario by id: {}",id);
-        User userbd = userService.getUserById(id).get();
-        logger.info("Repuesta enviada para usuario con id: {}",id);
+        User userbd = userService.getUserById(id)
+                .orElseThrow(() -> new UserNotFoundException(id));
         return ResponseEntity.ok(userbd);
     }
     @Override
