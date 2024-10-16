@@ -11,6 +11,15 @@ INSERT INTO PERMISOS (title) VALUES ('Crear Rol');
 INSERT INTO PERMISOS (title) VALUES ('Leer Rol');
 INSERT INTO PERMISOS (title) VALUES ('Actualizar Rol');
 
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(1,1);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(1,2);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(1,3);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(1,4);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(3,5);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(3,6);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(3,7);
+INSERT INTO ROL_PERMISOS(role_id, permiso_id) VALUES(2,2);
+
 
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Carlos', 'Gómez', 'cgomez', 'password1', true, 1);
 INSERT INTO USERS (name, subname, username, password, enabled, rol_id) VALUES ('Pedro', 'Hernández', 'phernandez', 'password3', true, 1);

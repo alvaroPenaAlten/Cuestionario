@@ -2,8 +2,6 @@ package com.userDto.service;
 
 
 import com.userDto.domain.Permisos;
-import com.userDto.domain.Rol;
-import com.userDto.domain.User;
 import com.userDto.dto.PermisosDto;
 import com.userDto.mapper.PermisosMapper;
 import com.userDto.repository.PermisosRepository;

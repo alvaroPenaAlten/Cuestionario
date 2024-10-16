@@ -21,13 +21,8 @@ public class Rol {
     @JsonIgnore
     private Set<User> users;
 
-    @ManyToMany
-    @JoinTable(
-            name = "ROL_PERMISOS",
-            joinColumns = @JoinColumn(name = "rol_id"),
-            inverseJoinColumns = @JoinColumn(name = "permiso_id")
-    )
-    private Set<Permisos> permisos;
+    @OneToMany(mappedBy = "roleId")
+    private Set<RolPermiso> rolPermisos;
 
     public Long getId() {
         return id;
@@ -53,11 +48,11 @@ public class Rol {
         this.users = users;
     }
 
-    public Set<Permisos> getPermisos() {
-        return permisos;
+    public Set<RolPermiso> getRolPermisos() {
+        return rolPermisos;
     }
 
-    public void setPermisos(Set<Permisos> permisos) {
-        this.permisos = permisos;
+    public void setRolPermisos(Set<RolPermiso> rolPermisos) {
+        this.rolPermisos = rolPermisos;
     }
 }

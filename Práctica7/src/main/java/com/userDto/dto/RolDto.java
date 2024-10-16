@@ -1,11 +1,13 @@
 package com.userDto.dto;
 
 import java.io.Serializable;
+import java.util.List;
 
 public class RolDto implements Serializable {
 
     private Long id;
     private String name;
+    private List<PermisosDto> permisos;
 
     public RolDto(Long id, String name) {
         this.id = id;
@@ -29,5 +31,13 @@ public class RolDto implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public List<PermisosDto> getPermisos() {
+        return permisos;
+    }
+
+    public void setPermisos(List<PermisosDto> permisos) {
+        this.permisos = permisos;
     }
 }

@@ -9,7 +9,7 @@ public class UserDtoName implements Serializable {
     private Long id;
     private String completeName;
     private String username;
-    private RolDto rol;
+    private Rol rol;
 
     public UserDtoName(Long id, String completeName, String username) {
         this.id = id;
@@ -46,11 +46,11 @@ public class UserDtoName implements Serializable {
         this.username = username;
     }
 
-    public RolDto getRol() {
+    public Rol getRol() {
         return rol;
     }
 
-    public void setRol(RolDto rol) {
+    public void setRol(Rol rol) {
         this.rol = rol;
     }
 }

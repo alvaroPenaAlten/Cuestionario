@@ -1,5 +1,6 @@
 package com.userDto.domain;
 
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 
 import java.util.Set;
@@ -15,8 +16,9 @@ public class Permisos {
     @Column(name = "title")
     private String titulo;
 
-    @ManyToMany(mappedBy = "permisos")
-    private Set<Rol> roles;
+    @OneToMany(mappedBy = "permisoId")
+    @JsonIgnore
+    private Set<RolPermiso> rolPermisos;
 
     public Long getId() {
         return id;
@@ -32,5 +34,13 @@ public class Permisos {
 
     public void setTitulo(String titulo) {
         this.titulo = titulo;
+    }
+
+    public Set<RolPermiso> getRolPermisos() {
+        return rolPermisos;
+    }
+
+    public void setRolPermisos(Set<RolPermiso> rolPermisos) {
+        this.rolPermisos = rolPermisos;
     }
 }
