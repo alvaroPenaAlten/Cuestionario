@@ -1,0 +1,66 @@
+[
+  {
+    "id": 1,
+    "name": "Alvaro",
+    "surname": "Peña",
+    "username": "alvaroPena",
+    "password": "alvapena123",
+    "enabled": true
+  },
+  {
+    "id": 2,
+    "name": "Adrian",
+    "surname": "Peña",
+    "username": "adrianPena",
+    "password": "adripena542",
+    "enabled": false
+  },
+  {
+    "id": 3,
+    "name": "María",
+    "surname": "José",
+    "username": "mariajo",
+    "password": "mariajo153",
+    "enabled": true
+  },
+  {
+    "id": 4,
+    "name": "Carmen",
+    "surname": "Pérez",
+    "username": "carmenPe",
+    "password": "carmen568",
+    "enabled": true
+  },
+  {
+    "id": 5,
+    "name": "Mario",
+    "surname": "Gómez",
+    "username": "marioGomez",
+    "password": "mario854",
+    "enabled": true
+  },
+  {
+    "id": 6,
+    "name": "Alvaro",
+    "surname": "Romero",
+    "username": "alvaRom",
+    "password": "alvaRom152",
+    "enabled": false
+  },
+  {
+    "id": 7,
+    "name": "Carmen",
+    "surname": "García",
+    "username": "carmenGar",
+    "password": "gar584",
+    "enabled": true
+  },
+  {
+    "id": 8,
+    "name": "Pepe",
+    "surname": "Rodríguez",
+    "username": "pepeRodr",
+    "password": "pep854",
+    "enabled": false
+  }
+]
