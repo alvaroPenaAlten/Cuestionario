@@ -1,0 +1,39 @@
+Pregunta 1.¿Has usado Lombok? Si es así, explica para qué se usa e intégralo en el proyecto como consideres.
+
+No he usado nunca lombok pero he buscado información para su uso, y según he estado leyendo sirve de anotaciones,
+sirve para generar automáticamente los getter, setters, constructores, esto hace que el código sea mas limpio.
+
+Para la integración solo hay que poner antes de la clase la anotación @Data. Tienes que tener la dependencia correspondiente.
+
+Pregunta 2.¿Has usado Flyway o Liquibase? Si es así, explica para qué se usa e intégralo en el proyecto como consideres.
+
+No he usado ni Flyway ni Liquibase pero he buscado información y son gestores de migraciones de base de datos que permiten hacer un seguimiento de los cambios. Esto sirve para ver si la base de datos esta en un estado correcto y actualizado respecto al código de la app.
+
+Para la implementación de Flywat o Liquibase tienes que poner en el archivo de propiedades de la aplicación una serie de comandos
+para habilitar el uso de estas herramientas, después de esto tienes que crear un script para la migración de datos.
+
+Pregunta 3.¿Has usado Docker? Si es así, explica para qué se usa e intégralo en el proyecto como consideres.
+
+No he usado Docker nunca, He mirado por internet documentación y sirve para construir, enviar y ejecutar aplicaciones en contenedores.
+Estos contenedores lo que hacen es empaqueta el código y todas las dependencias para que la aplicación se ejecute más rápido y confiable en diferentes entornos.
+
+Pregunta 4.¿Has realizado Pruebas Unitarias? Si es así, explica para qué se usan, técnología que has usado e intégralo en el proyecto como consideres.
+
+Las pruebas unitarias son unas pruebas que se hacen en unidades individuales de código, es decir, se hacen en métodos o funciones
+para comprobar que hace lo deseado. La tecnología más común para hacer este tipo de pruebas es el JUnit
+
+Para la implementación tienes que tener la dependencia correspondiente, creas una clase de prueba y la ejecutas.
+
+Pregunta 5.¿Estás habituado a trabajar con diferentes profiles YAML? Si es así, explica para qué se usan y aplícalo en el proyecto para que según el profile se pueda apuntar a BBDD diferentes.
+
+No he trabajado nunca con diferentes profiles YAML, he estado mirando y hay varias formas de usar diferentes profiles de YAML, uno es crear archivos de configuración y otra es crear archivos YAML para cada Profile.
+
+Pregunta 6.¿Has usado alguna de estas herramientas: Jenkins, Git, Sonaqube? Explica qué has hecho con ellas.
+
+La única herramienta que he usado ha sido Git para la gestión de repositorios y control de versiones.
+
+He buscado documentación sobre Jenkins ya que no lo he usado nunca y sirve para la automatización de procesos de construcción, pruebas
+y despliegue de software. Sonaqube sirve para uan evaluación continua de calidad sobre el código, mediante análisis estáticos.
+Esto es útil ya que ayuda a identificar problemas de mantenibilidad, fiabilidad, seguridad, etc.
+
+
