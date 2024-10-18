@@ -1,0 +1,36 @@
+Pregunta 1.¿Para qué se usa MAVEN?
+
+Maven para para la construcción y descarga de dependencias. (Buscado por internet).
+
+Pregunta 2.¿Cómo se llama el fichero qué usa MAVEN como referencia para su funcionamiento?
+
+El archivo que usa Maven para su funcionamiento es POM.xml.
+
+Pregunta 3.Explica con tu palabras ¿Qué es el árbol de dependencias?
+
+Un árbol de dependencias es para mostrar que tareas dependen de otras.
+
+Pregunta 4.¿Sabes cómo excluir una dependencia hija? Pon un ejemplo de cómo se haría.
+
+No sabía como se podía excluir una dependencia hija, pero he mirado por internet y parece bastante sencillo, en la dependencia
+que quieres excluir lo metes entre la etiqueta <exclusion></exclusion>.
+
+Ejemplo:(Ejemplo generado por ChatGPT)
+
+<dependency>
+    <groupId>com.ejemplo</groupId>
+    <artifactId>dependencia-principal</artifactId>
+    <version>1.0.0</version>
+    <exclusions>
+        <exclusion>
+            <groupId>com.ejemplo.hija</groupId>
+            <artifactId>dependencia-hija</artifactId>
+        </exclusion>
+    </exclusions>
+</dependency>
+
+Pregunta5.¿Sabes de dónde descarga MAVEN todas las dependencias que se solicitan? ¿Sabes qué es y para qué se usa Nexus?
+
+Maven descarga las dependencias que se solicita en repositorios remotos, como puede ser MAVEN CENTRAL.
+Nexus es un administrador de repositorios puede solicitar artefactos, los almacena, los recupera y asigna a un sistema de coordenadas estándar
+a los artefactos que almacena. Permite catalogar y almacenar sus propios artefactos utilizando el mismo sistema de numeración que usa la biblioteca.
