@@ -1,0 +1,16 @@
+Pregunta1.Explica qué es DTO y para qué se utiliza.
+
+DTO es un objeto que transporta datos entre las distintas capas dentro de la aplicación.
+
+Pregunta2.Explica qué es un Mapper y para qué se utiliza.
+
+He buscado información acerca del Mapper y depende del ámbito de programación en el que es sirve para una cosa o para otra.
+Imagino que me están preguntando por Java, es una clase llamada ObjectMapper que sirve para convertir objectos Java a Json,
+y viceversa. También he encontrado esto para según que ámbito de la programación estés.
+
+Resumen generado por ChatGPT.
+
+En programación funcional, transforma colecciones de datos.
+En bases de datos, mapea objetos de software a tablas relacionales.
+En Big Data, procesa datos distribuidos en el modelo MapReduce.
+En GIS, transforma y visualiza datos geográficos.
